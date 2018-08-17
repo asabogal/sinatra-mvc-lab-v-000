@@ -9,8 +9,8 @@ class PigLatinizer
 
   end
 
-  def piglatinize_word(word)
-
+  def piglatinize_word(input)
+    @phrase
     # binding.pry
     #Condition 1
     #For words that begin with consonant sounds,
