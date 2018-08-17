@@ -18,8 +18,8 @@ class PigLatinizer
     #all letters before the initial vowel are placed at the end of the word sequence.
     #Then, "ay" is added
 
-    if word[0]
-    end
+    # if word[0]
+    # end
 
     #Condition 2
     #When words begin with consonant clusters (multiple consonants that form one sound),
