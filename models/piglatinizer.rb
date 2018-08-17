@@ -18,7 +18,7 @@ class PigLatinizer
     #Then, "ay" is added
 
     if word[0].match(/[aAeEiIoOuU]/)
-      word + "way"
+      word+"way"
     end
 
     #Condition 2
