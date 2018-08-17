@@ -10,6 +10,7 @@ class PigLatinizer
   end
 
   def piglatinize_word(input)
+  
     binding.pry
     # binding.pry
     #Condition 1
