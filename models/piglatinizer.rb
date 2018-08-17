@@ -23,7 +23,7 @@ class PigLatinizer
   end.join(" ")
 
   def piglatinize_sentence(input)
-
+    binding.pry
   end
 
 end
