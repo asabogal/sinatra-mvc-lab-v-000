@@ -6,7 +6,7 @@ class PigLatinizer
     w.collect do |word|
       if word[0].match(/[aAeEiIoOuU]/)
         word+"way"
-      elsif !word[0].match(/[aAeEiIoOuU]/) && word[1].match(/[aAeEiIoOuU]/)
+      elsif word[1].match(/[aAeEiIoOuU]/)
         word[1..-1]+word[0]+"ay"
       elsif !word[0].match(/[aAeEiIoOuU]/) && !word[1].match(/[aAeEiIoOuU]/) && word[2].match(/[aAeEiIoOuU]/)
         word[2..-1]+word[0..1]+"ay"
