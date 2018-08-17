@@ -17,14 +17,14 @@ class PigLatinizer
       #one just adds "way" or "yay" to the end (or just "ay")
       if word[0].match(/[aAeEiIoOuU]/)
         word+"way"
-      elsif word[1].match(/[aAeEiIoOuU]/)
+      elsif !word[0].match(/[aAeEiIoOuU]/) && word[1].match(/[aAeEiIoOuU]/)
         word[1..-1]+word[0]+"ay"
-      elsif !word[2].match(/[aAeEiIoOuU]/)
-
+      elsif !word[0].match(/[aAeEiIoOuU]/) && !word[1].match(/[aAeEiIoOuU]/)
+        word[2..-1]+word[0..1]+"ay"
       end
-      binding.pry
-    end
 
+    end
+    binding.pry
     # binding.pry
     #Condition 1
     #For words that begin with consonant sounds,
