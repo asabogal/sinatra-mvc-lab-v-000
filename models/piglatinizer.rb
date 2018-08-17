@@ -5,7 +5,7 @@ class PigLatinizer
     words_arr = string.split(" ")
     words_arr.length == 1 ? piglatinize_word(string) : piglatinize_sentence(string)
 
-    # binding.pry
+    binding.pry
 
 
 
