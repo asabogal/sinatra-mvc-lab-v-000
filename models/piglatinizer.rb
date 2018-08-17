@@ -7,6 +7,7 @@ def consonant?(char)
     # word starts with vowel
     if !consonant?(word[0])
       word = word + "w"
+      binding.pry
     # word starts with 3 consonants
     elsif consonant?(word[0]) && consonant?(word[1]) && consonant?(word[2])
       word = word.slice(3..-1) + word.slice(0,3)
