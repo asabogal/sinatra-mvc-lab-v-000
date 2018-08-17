@@ -3,8 +3,9 @@ require 'pry'
 class PigLatinizer
 
   def piglatinize(phrase)
+    binding.pry
     phrase_array = phrase.split(" ")
-      binding.pry
+
     phrase_array.collect do |word|
 
       if word[0].downcase.match(/[aeiou]/)
