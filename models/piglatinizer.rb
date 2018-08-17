@@ -1,9 +1,9 @@
 require 'pry'
 class PigLatinizer
 
-  def piglatinize(sentence)
-    words_arr = sentence.split(" ")
-    words_arr.lenght
+  def piglatinize(input)
+    words_arr = input.split(" ")
+    words_arr.lenght == ? piglatinize_word(input) : piglatinize_sentence(input)
 
     binding.pry
     #Condition 1
