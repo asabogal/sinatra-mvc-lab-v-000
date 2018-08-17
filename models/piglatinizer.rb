@@ -26,6 +26,7 @@ class PigLatinizer
     else
       word = word.slice(1..-1) + word.slice(0)
     end
+    binding.pry
     word << "ay"
   end
 
