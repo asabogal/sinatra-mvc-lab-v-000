@@ -19,7 +19,7 @@ class PigLatinizer
         word+"way"
       elsif word[0].match(/[aAeEiIoOuU]/) && word[1].match(/[aAeEiIoOuU]/)
         word[1..-1]+word[0]+"ay"
-      elsif word[0].match(/[aAeEiIoOuU]/) && word[1].!match(/[aAeEiIoOuU]/)
+      elsif word[0].match(/[aAeEiIoOuU]/) && word[1].match(/[aAeEiIoOuU]/)
         binding.pry
       end
 
