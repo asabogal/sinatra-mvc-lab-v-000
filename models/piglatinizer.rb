@@ -20,10 +20,10 @@ class PigLatinizer
         word[2..-1]+word[0..1]+"ay"
       end
     end
-  end.join(" ")
+  end
 
   def piglatinize_sentence(input)
-    
+
   end
 
 end
