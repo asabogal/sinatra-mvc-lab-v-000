@@ -10,7 +10,8 @@ class PigLatinizer
   end
 
   def piglatinize_word(input)
-  
+    w = input.split(" ")
+    
     binding.pry
     # binding.pry
     #Condition 1
