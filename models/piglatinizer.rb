@@ -3,7 +3,7 @@ class PigLatinizer
 
   def piglatinize(input)
     words_arr = input.split(" ")
-    words_arr.lenght == ? piglatinize_word(input) : piglatinize_sentence(input)
+    words_arr.lenght == 1 ? piglatinize_word(input) : piglatinize_sentence(input)
 
     binding.pry
 
