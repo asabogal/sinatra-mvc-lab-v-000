@@ -18,6 +18,7 @@ class PigLatinizer
     #Then, "ay" is added
 
     if word[0]
+    end
 
     #Condition 2
     #When words begin with consonant clusters (multiple consonants that form one sound),
