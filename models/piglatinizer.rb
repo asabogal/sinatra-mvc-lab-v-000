@@ -4,9 +4,9 @@ class PigLatinizer
 
   def piglatinize(phrase)
     phrase_array = phrase.split(" ")
-
+      binding.pry
     phrase_array.collect do |word|
-        binding.pry
+
       if word[0].downcase.match(/[aeiou]/)
         word+"way"
 
