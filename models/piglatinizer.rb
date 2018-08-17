@@ -17,7 +17,8 @@ class PigLatinizer
     #all letters before the initial vowel are placed at the end of the word sequence.
     #Then, "ay" is added
 
-    if word[0]
+    if word[0].match(/[aAeEiIoOuU]/)
+      puts hello
     end
 
     #Condition 2
