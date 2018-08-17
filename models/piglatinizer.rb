@@ -22,9 +22,9 @@ class PigLatinizer
       elsif word[3].match(/[aAeEiIoOuU]/)
         binding.prywor
       end
+      binding.pry
     end
-    end
-    binding.pry
+
     # binding.pry
     #Condition 1
     #For words that begin with consonant sounds,
