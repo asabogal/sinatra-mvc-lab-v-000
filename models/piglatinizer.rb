@@ -18,7 +18,7 @@ class PigLatinizer
       elsif !word[0].match(/[aAeEiIoOuU]/) && !word[1].match(/[aAeEiIoOuU]/)
         word[2..-1]+word[0..1]+"ay"
       else
-        "spray"[3..-1]+"spray"[0..2]+"ay"
+        word[3..-1]+word[0..2]+"ay"
       end
       binding.pry
     end.join(" ")
