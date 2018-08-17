@@ -3,6 +3,7 @@ class PigLatinizer
 
   def piglatinize(sentence)
     words_arr = sentence.split(" ")
+    words_arr.lenght
 
     binding.pry
     #Condition 1
@@ -13,5 +14,7 @@ class PigLatinizer
 
   end
 
+  def piglatinize_word(word)
+  end
 
 end
