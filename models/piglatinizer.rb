@@ -12,7 +12,7 @@ class PigLatinizer
   def piglatinize_word(input)
     w = input.split(" ")
     w.collect do |word|
-      if word[0].match(/![aAeEiIoOuU]/)
+      if word[0].match(/[aAeEiIoOuU]/)
         word+"way"
       elsif !word[0].match(/[aAeEiIoOuU]/) && word[1].match(/[aAeEiIoOuU]/)
         word[1..-1]+word[0]+"ay"
