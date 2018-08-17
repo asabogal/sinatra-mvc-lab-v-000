@@ -20,9 +20,9 @@ class PigLatinizer
       elsif word[1].match(/[aAeEiIoOuU]/)
         word[1..-1]+word[0]+"ay"
       elsif word[3].match(/[aAeEiIoOuU]/)
-        binding.pry
+        binding.prywor
       end
-
+    end
     end
     binding.pry
     # binding.pry
