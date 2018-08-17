@@ -3,7 +3,7 @@ class PigLatinizer
 
   def piglatinize(string)
     @phrase = string.split(" ")
-    @phrase.length == 1 ? pig_latin = piglatinize_word(string) : pig_latin = piglatinize_sentence(string)
+    @phrase.length === 1 ? pig_latin = piglatinize_word(string) : pig_latin = piglatinize_sentence(string)
     pig_latin
   end
 
