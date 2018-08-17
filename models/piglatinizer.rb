@@ -1,38 +1,25 @@
 require 'pry'
-class PigLatinizer
-
-  def piglatinize(string)
-    @words_arr = string.split(" ")
-    @words_arr.length == 1 ? pig_latin = piglatinize_word(string) : pig_latin = piglatinize_sentence(string)
-    pig_latin
-
-
+def consonant?(char)
+    !char.match(/[aAeEiIoOuU]/)
   end
 
   def piglatinize_word(word)
-    word = @words_arr
-    # binding.pry
-    #Condition 1
-    #For words that begin with consonant sounds,
-    #all letters before the initial vowel are placed at the end of the word sequence.
-    #Then, "ay" is added
-
-    if word[0].match(/[aAeEiIoOuU]/)
-      word+"way"
+    # word starts with vowel
+    if !consonant?(word[0])
+      word = word + "w"
+    # word starts with 3 consonants
+    elsif consonant?(word[0]) && consonant?(word[1]) && consonant?(word[2])
+      word = word.slice(3..-1) + word.slice(0,3)
+    # word starts with 2 consonants
+    elsif consonant?(word[0]) && consonant?(word[1])
+      word = word.slice(2..-1) + word.slice(0,2)
+    # word starts with 1 consonant
+    else
+      word = word.slice(1..-1) + word.slice(0)
     end
-
-    #Condition 2
-    #When words begin with consonant clusters (multiple consonants that form one sound),
-    #the whole sound is added to the end when speaking or writing.
-
-    #Condition 3
-    #For words that begin with vowel sounds,
-    #one just adds "way" or "yay" to the end (or just "ay")
-
+    word << "ay"
   end
 
   def piglatinize_sentence(sentence)
-
+    sentence.split.collect { |word| piglatinize_word(word) }.join(" ")
   end
-
-end
