@@ -5,8 +5,6 @@ class PigLatinizer
     @phrase = string.split(" ")
     @phrase.length == 1 ? pig_latin = piglatinize_word(string) : pig_latin = piglatinize_sentence(string)
     pig_latin
-
-
   end
 
   def piglatinize_word(input)
