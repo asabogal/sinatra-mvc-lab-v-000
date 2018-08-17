@@ -32,7 +32,7 @@ class PigLatinizer
   end
 
   def piglatinize_sentence(sentence)
-    "this is a sentences"
+    "this is a sentence"
   end
 
 end
