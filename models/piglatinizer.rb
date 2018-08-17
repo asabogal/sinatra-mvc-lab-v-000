@@ -11,7 +11,8 @@ class PigLatinizer
 
   def piglatinize_word(input)
     w = input.split(" ")
-    
+    w.collect do |word|
+    end
     binding.pry
     # binding.pry
     #Condition 1
