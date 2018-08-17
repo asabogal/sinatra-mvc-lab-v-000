@@ -2,8 +2,8 @@ require 'pry'
 class PigLatinizer
 
   def piglatinize(string)
-    @words_arr = string.split(" ")
-    @words_arr.length == 1 ? pig_latin = piglatinize_word(string) : pig_latin = piglatinize_sentence(string)
+    @word = string.split(" ")
+    @word.length == 1 ? pig_latin = piglatinize_word(string) : pig_latin = piglatinize_sentence(string)
     pig_latin
 
 
