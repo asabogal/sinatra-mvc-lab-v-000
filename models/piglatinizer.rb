@@ -5,12 +5,13 @@ class PigLatinizer
     @words_arr = string.split(" ")
     @words_arr.length == 1 ? pig_latin = piglatinize_word(string) : pig_latin = piglatinize_sentence(string)
     pig_latin
-    binding.pry
+
 
   end
 
   def piglatinize_word(word)
-
+    @words_arr
+    binding.pry
     #Condition 1
     #For words that begin with consonant sounds,
     #all letters before the initial vowel are placed at the end of the word sequence.
