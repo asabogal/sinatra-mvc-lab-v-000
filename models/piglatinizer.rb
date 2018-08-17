@@ -20,6 +20,7 @@ class PigLatinizer
       else
         "spray"[3..-1]+"spray"[0..2]+"ay"
       end
+      binding.pry
     end.join(" ")
   end
 
