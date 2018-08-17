@@ -1,4 +1,4 @@
-require 'py'
+require 'pry'
 
 class PigLatinizer
 
