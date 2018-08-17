@@ -11,7 +11,7 @@ class PigLatinizer
 
   def piglatinize_word(word)
     word = @words_arr
-    binding.pry
+    # binding.pry
     #Condition 1
     #For words that begin with consonant sounds,
     #all letters before the initial vowel are placed at the end of the word sequence.
