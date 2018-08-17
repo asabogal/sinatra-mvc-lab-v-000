@@ -1,13 +1,6 @@
 require 'pry'
 class PigLatinizer
 
-  # def piglatinize(string)
-  #   @phrase = string.split(" ")
-  #   @phrase.length === 1 ? pig_latin = piglatinize_word(string) : pig_latin = piglatinize_sentence(string)
-  #   pig_latin
-  #
-  # end
-
   def piglatinize(input)
     w = input.split(" ")
     w.collect do |word|
@@ -23,8 +16,3 @@ class PigLatinizer
     end.join(" ")
   end
 end
-
-#   def piglatinize_sentence(input)
-#     input.split(" ").collect {|word| piglatinize_word(word)}.join(" ")
-#   end
-# end
