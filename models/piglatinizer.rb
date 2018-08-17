@@ -12,7 +12,13 @@ class PigLatinizer
   def piglatinize_word(input)
     w = input.split(" ")
     w.collect do |word|
+      #Condition 3
+      #For words that begin with vowel sounds,
+      #one just adds "way" or "yay" to the end (or just "ay")
       if word[0].match(/[aAeEiIoOuU]/)
+        word+"way"
+      end
+
     end
     binding.pry
     # binding.pry
@@ -27,12 +33,8 @@ class PigLatinizer
     #When words begin with consonant clusters (multiple consonants that form one sound),
     #the whole sound is added to the end when speaking or writing.
 
-    #Condition 3
-    #For words that begin with vowel sounds,
-    #one just adds "way" or "yay" to the end (or just "ay")
-    if word[0].match(/[aAeEiIoOuU]/)
-      word+"way"
-    end
+
+
 
   end
 
