@@ -12,6 +12,7 @@ class PigLatinizer
   def piglatinize_word(input)
     w = input.split(" ")
     w.collect do |word|
+      if word[0].match(/[aAeEiIoOuU]/)
     end
     binding.pry
     # binding.pry
